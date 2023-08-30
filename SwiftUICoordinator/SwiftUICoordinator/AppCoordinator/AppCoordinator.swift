@@ -21,7 +21,7 @@ final class AppCoordinator: ObservableObject {
     
     @ViewBuilder
     func build() -> some View {
-        
+        homeView()
     }
         
 }
@@ -42,15 +42,68 @@ extension AppCoordinator {
     private func bind(view: HomeView) {
         view.didSelectMenuItem
             .receive(on: DispatchQueue.main)
-            .sink { item in
+            .sink { [weak self] item in
                 switch item {
                 case .users:
-                    break
+                    self?.userFlow()
                 case .profile:
-                    break
+                    self?.profileFlow()
                 case .settings:
-                    break
+                    self?.settingFlow()
                 }
+            }
+            .store(in: &cancellable)
+    }
+    
+    private func userFlow() {
+      let userFlowCoordinator = UserFlowCoordinator(page: .users)
+      bind(userCoordinator: userFlowCoordinator)
+      push(userFlowCoordinator)
+    }
+    
+    private func profileFlow() {
+      let profileCoordinator = ProfileFlowCoordinator(profilePage: .mainProfile)
+      bind(profileCoordinator: profileCoordinator)
+      push(profileCoordinator)
+    }
+        
+    private func settingFlow() {
+      let settingCoordinator = SettingsFlowCoordinator(page: .main)
+      bind(settingCoordinator: settingCoordinator)
+      push(settingCoordinator)
+    }
+    
+}
+
+// MARK: - Flow Coordinator Bindings
+extension AppCoordinator {
+    
+    private func bind(userCoordinator: UserFlowCoordinator) {
+        userCoordinator
+            .pushCoordinator
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] coordinator in
+                self?.push(coordinator)
+            }
+            .store(in: &cancellable)
+    }
+    
+    private func bind(profileCoordinator: ProfileFlowCoordinator) {
+        profileCoordinator
+            .pushCoordinator
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] coordinator in
+                self?.push(coordinator)
+            }
+            .store(in: &cancellable)
+    }
+    
+    private func bind(settingCoordinator: SettingsFlowCoordinator) {
+        settingCoordinator
+            .pushCoordinator
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] coordinator in
+                self?.push(coordinator)
             }
             .store(in: &cancellable)
     }

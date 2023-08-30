@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5D129B6E2A9FD62800FD7D94 /* UserPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B6D2A9FD62800FD7D94 /* UserPage.swift */; };
+		5D129B712A9FE7E600FD7D94 /* SettingsFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B702A9FE7E600FD7D94 /* SettingsFlowCoordinator.swift */; };
+		5D129B762A9FE83700FD7D94 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B752A9FE83700FD7D94 /* SettingPage.swift */; };
+		5D129B782A9FE8EC00FD7D94 /* MainSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B772A9FE8EC00FD7D94 /* MainSettingView.swift */; };
+		5D129B7A2A9FE8FE00FD7D94 /* CustomSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B792A9FE8FE00FD7D94 /* CustomSettingView.swift */; };
+		5D129B7C2A9FE91A00FD7D94 /* PrivacySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B7B2A9FE91A00FD7D94 /* PrivacySettingView.swift */; };
+		5D129B822A9FECFE00FD7D94 /* MainProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B812A9FECFE00FD7D94 /* MainProfileView.swift */; };
+		5D129B842A9FED1300FD7D94 /* PersonalProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B832A9FED1300FD7D94 /* PersonalProfileView.swift */; };
+		5D129B862A9FED2500FD7D94 /* EducationalProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B852A9FED2500FD7D94 /* EducationalProfileView.swift */; };
+		5D129B882A9FED4E00FD7D94 /* ProfileFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B872A9FED4E00FD7D94 /* ProfileFlowCoordinator.swift */; };
+		5D129B8A2A9FED5D00FD7D94 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D129B892A9FED5D00FD7D94 /* ProfilePage.swift */; };
 		5DC7843E2A9FC6770000419B /* SwiftUICoordinatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7843D2A9FC6770000419B /* SwiftUICoordinatorApp.swift */; };
 		5DC784402A9FC6770000419B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC7843F2A9FC6770000419B /* ContentView.swift */; };
 		5DC784422A9FC6790000419B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC784412A9FC6790000419B /* Assets.xcassets */; };
@@ -45,6 +55,16 @@
 
 /* Begin PBXFileReference section */
 		5D129B6D2A9FD62800FD7D94 /* UserPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPage.swift; sourceTree = "<group>"; };
+		5D129B702A9FE7E600FD7D94 /* SettingsFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFlowCoordinator.swift; sourceTree = "<group>"; };
+		5D129B752A9FE83700FD7D94 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		5D129B772A9FE8EC00FD7D94 /* MainSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingView.swift; sourceTree = "<group>"; };
+		5D129B792A9FE8FE00FD7D94 /* CustomSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingView.swift; sourceTree = "<group>"; };
+		5D129B7B2A9FE91A00FD7D94 /* PrivacySettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySettingView.swift; sourceTree = "<group>"; };
+		5D129B812A9FECFE00FD7D94 /* MainProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileView.swift; sourceTree = "<group>"; };
+		5D129B832A9FED1300FD7D94 /* PersonalProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileView.swift; sourceTree = "<group>"; };
+		5D129B852A9FED2500FD7D94 /* EducationalProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationalProfileView.swift; sourceTree = "<group>"; };
+		5D129B872A9FED4E00FD7D94 /* ProfileFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlowCoordinator.swift; sourceTree = "<group>"; };
+		5D129B892A9FED5D00FD7D94 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		5DC7843A2A9FC6770000419B /* SwiftUICoordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC7843D2A9FC6770000419B /* SwiftUICoordinatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICoordinatorApp.swift; sourceTree = "<group>"; };
 		5DC7843F2A9FC6770000419B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +111,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D129B6F2A9FE7D500FD7D94 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B702A9FE7E600FD7D94 /* SettingsFlowCoordinator.swift */,
+				5D129B752A9FE83700FD7D94 /* SettingPage.swift */,
+				5D129B742A9FE82100FD7D94 /* PrivacySetting */,
+				5D129B732A9FE81300FD7D94 /* CustomSetting */,
+				5D129B722A9FE7FF00FD7D94 /* MainSetting */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		5D129B722A9FE7FF00FD7D94 /* MainSetting */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B772A9FE8EC00FD7D94 /* MainSettingView.swift */,
+			);
+			path = MainSetting;
+			sourceTree = "<group>";
+		};
+		5D129B732A9FE81300FD7D94 /* CustomSetting */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B792A9FE8FE00FD7D94 /* CustomSettingView.swift */,
+			);
+			path = CustomSetting;
+			sourceTree = "<group>";
+		};
+		5D129B742A9FE82100FD7D94 /* PrivacySetting */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B7B2A9FE91A00FD7D94 /* PrivacySettingView.swift */,
+			);
+			path = PrivacySetting;
+			sourceTree = "<group>";
+		};
+		5D129B7D2A9FECC800FD7D94 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B872A9FED4E00FD7D94 /* ProfileFlowCoordinator.swift */,
+				5D129B892A9FED5D00FD7D94 /* ProfilePage.swift */,
+				5D129B802A9FECF500FD7D94 /* EducationalProfile */,
+				5D129B7F2A9FECE500FD7D94 /* PersonalProfile */,
+				5D129B7E2A9FECD600FD7D94 /* MainProfile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5D129B7E2A9FECD600FD7D94 /* MainProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B812A9FECFE00FD7D94 /* MainProfileView.swift */,
+			);
+			path = MainProfile;
+			sourceTree = "<group>";
+		};
+		5D129B7F2A9FECE500FD7D94 /* PersonalProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B832A9FED1300FD7D94 /* PersonalProfileView.swift */,
+			);
+			path = PersonalProfile;
+			sourceTree = "<group>";
+		};
+		5D129B802A9FECF500FD7D94 /* EducationalProfile */ = {
+			isa = PBXGroup;
+			children = (
+				5D129B852A9FED2500FD7D94 /* EducationalProfileView.swift */,
+			);
+			path = EducationalProfile;
+			sourceTree = "<group>";
+		};
 		5DC784312A9FC6770000419B = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +206,11 @@
 		5DC7843C2A9FC6770000419B /* SwiftUICoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				5DC7846E2A9FCAE00000419B /* User */,
-				5DC784682A9FC69B0000419B /* AppCoordinator */,
 				5DC784672A9FC6870000419B /* System */,
+				5DC784682A9FC69B0000419B /* AppCoordinator */,
+				5D129B7D2A9FECC800FD7D94 /* Profile */,
+				5D129B6F2A9FE7D500FD7D94 /* Settings */,
+				5DC7846E2A9FCAE00000419B /* User */,
 				5DC7843F2A9FC6770000419B /* ContentView.swift */,
 				5DC7846B2A9FC7320000419B /* Home */,
 				5DC784412A9FC6790000419B /* Assets.xcassets */,
@@ -336,16 +430,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DC7846A2A9FC6AC0000419B /* AppCoordinator.swift in Sources */,
+				5D129B762A9FE83700FD7D94 /* SettingPage.swift in Sources */,
+				5D129B842A9FED1300FD7D94 /* PersonalProfileView.swift in Sources */,
+				5D129B7C2A9FE91A00FD7D94 /* PrivacySettingView.swift in Sources */,
+				5D129B7A2A9FE8FE00FD7D94 /* CustomSettingView.swift in Sources */,
 				5DC784742A9FCB2B0000419B /* UserListView.swift in Sources */,
+				5D129B822A9FECFE00FD7D94 /* MainProfileView.swift in Sources */,
 				5DC784762A9FCB360000419B /* UserListViewModel.swift in Sources */,
+				5D129B782A9FE8EC00FD7D94 /* MainSettingView.swift in Sources */,
 				5DC784702A9FCAF00000419B /* UserFlowCoordinator.swift in Sources */,
 				5DC7847A2A9FCB4E0000419B /* UserProfileDetailViewModel.swift in Sources */,
 				5D129B6E2A9FD62800FD7D94 /* UserPage.swift in Sources */,
+				5D129B862A9FED2500FD7D94 /* EducationalProfileView.swift in Sources */,
 				5DC784782A9FCB3D0000419B /* User.swift in Sources */,
 				5DC7846D2A9FC7420000419B /* HomeView.swift in Sources */,
+				5D129B712A9FE7E600FD7D94 /* SettingsFlowCoordinator.swift in Sources */,
 				5DC784402A9FC6770000419B /* ContentView.swift in Sources */,
 				5DC7843E2A9FC6770000419B /* SwiftUICoordinatorApp.swift in Sources */,
+				5D129B8A2A9FED5D00FD7D94 /* ProfilePage.swift in Sources */,
 				5DC7847E2A9FCB680000419B /* UserProfileDetail.swift in Sources */,
+				5D129B882A9FED4E00FD7D94 /* ProfileFlowCoordinator.swift in Sources */,
 				5DC784802A9FCB760000419B /* UserProfileDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -65,7 +65,7 @@ extension UserFlowCoordinator {
 // MARK: - Navigation
 extension UserFlowCoordinator {
     private func showUserProfileFor(user: User) {
-        
+        pushCoordinator.send(UserFlowCoordinator(page: .profile, userID: userID))
     }
 }
 
