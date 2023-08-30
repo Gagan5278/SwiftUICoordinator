@@ -1,2 +1,3 @@
-# SwiftUICoordinator
-An example to build MVVM-C using SwiftUI.
+# WORK IN PROGRESS, Please stay tuned
+## SwiftUICoordinator 
+An example of building MVVM-C using SwiftUI.
