@@ -11,19 +11,21 @@ struct ContentView: View {
     @StateObject private var appCoordinator = AppCoordinator(path: NavigationPath())
 
     var body: some View {
-        NavigationStack {
-            appCoordinator.build()
-                .navigationDestination(for: UserFlowCoordinator.self) { coordinator in
-                    coordinator.build()
-                }
-                .navigationDestination(for: SettingsFlowCoordinator.self) { coordinator in
-                    coordinator.build()
-                }
-                .navigationDestination(for: ProfileFlowCoordinator.self) { coordinator in
-                    coordinator.build()
-                }
+        NavigationStack(path: $appCoordinator.path) {
+                appCoordinator.build()
+                    .navigationDestination(for: UserFlowCoordinator.self) { coordinator in
+                        coordinator.build()
+                    }
+                    .navigationDestination(for: SettingsFlowCoordinator.self) { coordinator in
+                        coordinator.build()
+                    }
+                    .navigationDestination(for: ProfileFlowCoordinator.self) { coordinator in
+                        coordinator.build()
+                    }
+            
         }
         .environmentObject(appCoordinator)
+        .ignoresSafeArea()
     }
 }
 

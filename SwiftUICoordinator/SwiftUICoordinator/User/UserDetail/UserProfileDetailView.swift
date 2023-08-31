@@ -11,12 +11,16 @@ struct UserDetailView: View {
     @StateObject var userProfileDetailViewModel: UserProfileDetailViewModel
     var body: some View {
         VStack {
-            Text(userProfileDetailViewModel.profile.name)
-            Divider()
-            Text("\(userProfileDetailViewModel.profile.age)")
-            Divider()
-            Text(userProfileDetailViewModel.profile.occupation)
-            Divider()
+            if let profile = userProfileDetailViewModel.profile {
+                Text(profile.name)
+                Divider()
+                Text("\(profile.age)")
+                Divider()
+                Text(profile.occupation)
+                Divider()
+            } else {
+                ProgressView()
+            }
         }
         .padding(.horizontal)
         .navigationTitle("Profile")

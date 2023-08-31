@@ -56,7 +56,7 @@ extension ProfileFlowCoordinator {
             .didSelectPerosnalProfile
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
-                self?.navigateToMainProfile()
+                self?.navigateToPersonalProfile()
             }
             .store(in: &cancellable)
         
@@ -83,11 +83,11 @@ extension ProfileFlowCoordinator: Hashable {
 
 // MARK: - Navigation
 extension ProfileFlowCoordinator {
-    private func navigateToMainProfile() {
-        pushCoordinator.send(ProfileFlowCoordinator(profilePage: .mainProfile))
+    private func navigateToPersonalProfile() {
+        pushCoordinator.send(ProfileFlowCoordinator(profilePage: .personalProfile))
     }
     
     private func navigateToEducationalProfile() {
-        pushCoordinator.send(ProfileFlowCoordinator(profilePage: .mainProfile))
+        pushCoordinator.send(ProfileFlowCoordinator(profilePage: .educationalProfile))
     }
 }

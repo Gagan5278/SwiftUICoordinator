@@ -28,9 +28,9 @@ extension UserFlowCoordinator {
     func build() -> some View {
         switch page {
         case .profile:
-             userListView()
-        case .users:
             userProfileDetailView()
+        case .users:
+            userListView()
         }
     }
     
@@ -65,7 +65,7 @@ extension UserFlowCoordinator {
 // MARK: - Navigation
 extension UserFlowCoordinator {
     private func showUserProfileFor(user: User) {
-        pushCoordinator.send(UserFlowCoordinator(page: .profile, userID: userID))
+        pushCoordinator.send(UserFlowCoordinator(page: .profile, userID: user.id))
     }
 }
 
